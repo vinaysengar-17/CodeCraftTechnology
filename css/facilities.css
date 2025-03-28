@@ -1,0 +1,158 @@
+.facilities-section {
+  padding: 100px 0;
+  background-color: white;
+}
+
+.facility-box {
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  overflow: visible;
+  margin: 50px auto;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.facility-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.facility-icon:before,
+.facility-icon:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 16px;
+  background: inherit;
+  border-radius: 50%;
+  top: -4px;
+  z-index: 1;
+}
+
+.facility-icon:before {
+  left: 8px;
+}
+
+.facility-icon:after {
+  right: 8px;
+}
+
+.facility-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.facility-text {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  transition: color 0.3s ease;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+
+  /* Standard implementation (emerging) */
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-line-clamp: 3;
+  display: box;
+  box-orient: vertical;
+  line-clamp: 3;
+}
+
+
+/* Color Themes for Facility Boxes */
+.facility-box:nth-child(1) {
+  background-color: rgba(247, 88, 53, 0.1);
+  color: var(--primary-color);
+}
+
+.facility-box:nth-child(2) {
+  background-color: rgba(247, 88, 53, 0.15);
+  color: var(--primary-color);
+}
+
+.facility-box:nth-child(3) {
+  background-color: rgba(247, 88, 53, 0.2);
+  color: var(--primary-color);
+}
+
+.facility-box:nth-child(4) {
+  background-color: rgba(247, 88, 53, 0.25);
+  color: var(--primary-color);
+}
+
+.facility-box:nth-child(1) .facility-icon {
+  background-color: rgba(247, 88, 53, 0.1);
+  color: var(--primary-color);
+}
+
+.facility-box:nth-child(2) .facility-icon {
+  background-color: rgba(247, 88, 53, 0.15);
+  color: var(--primary-color);
+}
+
+.facility-box:nth-child(3) .facility-icon {
+  background-color: rgba(247, 88, 53, 0.2);
+  color: var(--primary-color);
+}
+
+.facility-box:nth-child(4) .facility-icon {
+  background-color: rgba(247, 88, 53, 0.25);
+  color: var(--primary-color);
+}
+
+/* Hover Effects */
+.facility-box:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.facility-box:hover .facility-title,
+.facility-box:hover .facility-text {
+  color: white;
+}
+
+.facility-box:hover .facility-icon,
+.facility-box:hover .facility-icon:before,
+.facility-box:hover .facility-icon:after {
+  background-color: inherit;
+  color: white;
+  transform: translateX(-50%) scale(1.1);
+}
+
+.facility-box:hover:nth-child(1),
+.facility-box:hover:nth-child(2),
+.facility-box:hover:nth-child(3),
+.facility-box:hover:nth-child(4) {
+  background-color: var(--primary-dark);
+}

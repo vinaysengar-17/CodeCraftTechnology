@@ -1,0 +1,126 @@
+/* Classes Section */
+.classes-section {
+  padding: 100px 0;
+  background-color: var(--light-gray);
+}
+
+.course-card {
+  position: relative;
+  margin-bottom: 50px;
+  transition: all 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.course-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 5px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.course-badge {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  transform: translateX(50%);
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 3;
+  white-space: nowrap;
+}
+
+.course-card:hover .course-image {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.course-content {
+  background: rgba(247, 88, 53, 0.1);
+  border-radius: 10px;
+  padding: 100px 20px 20px;
+  margin-top: -80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.course-content h3 a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.course-content h3 a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.teacher-img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.teacher-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(247, 88, 53, 0.5);
+}
+
+.price-badge {
+  font-weight: 600;
+  background-color: var(--primary-color) !important;
+  transition: all 0.3s ease;
+}
+
+.price-badge:hover {
+  transform: scale(1.05);
+}
+
+.class-details {
+  border-top: 1px solid #dee2e6;
+  padding-top: 0.75rem;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
+
+.btn-enroll {
+  width: 100%;
+  margin-top: 15px;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+}
+
+.btn-enroll:hover {
+  background-color: var(--primary-dark);
+}

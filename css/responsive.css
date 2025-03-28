@@ -1,0 +1,106 @@
+
+      /* Responsive Styles */
+      @media (max-width: 992px) {
+        .hero-content h1 {
+          font-size: 2.5rem;
+        }
+
+        .section-title {
+          font-size: 2rem;
+        }
+
+        .facility-box {
+          width: 180px;
+          height: 180px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero-section {
+          padding: 80px 0;
+          text-align: center;
+        }
+
+        .hero-content {
+          margin-bottom: 40px;
+        }
+
+        .hero-content p {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .section-title {
+          font-size: 1.8rem;
+        }
+
+        .facility-box {
+          width: 160px;
+          height: 160px;
+          margin: 30px auto;
+        }
+
+        .course-image {
+          width: 160px;
+          height: 160px;
+        }
+        
+        .course-content {
+          padding-top: 80px;
+          margin-top: -60px;
+        }
+
+        .testimonial-carousel .testimonial-item .client-info {
+          flex-direction: column;
+          text-align: center;
+          border-radius: 50px;
+          padding: 15px;
+        }
+
+        .testimonial-carousel .testimonial-item .client-img {
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .hero-content h1 {
+          font-size: 2rem;
+        }
+
+        .hero-content .subtitle {
+          font-size: 0.9rem;
+        }
+
+        .hero-content p {
+          font-size: 1rem;
+        }
+
+        .section-title {
+          font-size: 1.6rem;
+        }
+
+        .section-subtitle {
+          font-size: 1rem;
+        }
+
+        .facility-box {
+          width: 140px;
+          height: 140px;
+        }
+
+        .course-image {
+          width: 140px;
+          height: 140px;
+        }
+        
+        .course-content {
+          padding-top: 70px;
+          margin-top: -50px;
+        }
+
+        .testimonial-carousel {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }

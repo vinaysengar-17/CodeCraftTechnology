@@ -1,0 +1,175 @@
+/* Projects Section - Premium Version */
+.projects-section {
+    position: relative;
+  }
+  
+  .section-pre-title {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  
+  .project-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(247, 88, 53, 0.1);
+  }
+  
+  .project-image-wrapper {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+  }
+  
+  .project-card:hover .project-image {
+    transform: scale(1.1);
+  }
+  
+  .project-hover-content {
+    position: absolute;
+    inset: 0;
+    background: rgba(30, 58, 86, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+  
+  .project-card:hover .project-hover-content {
+    opacity: 1;
+  }
+  
+  .project-demo-btn {
+    color: white;
+    background: var(--primary-color);
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .project-demo-btn:hover {
+    background: white;
+    color: var(--primary-color);
+    transform: translateY(-3px);
+  }
+  
+  .project-demo-btn i {
+    margin-right: 8px;
+  }
+  
+  .project-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .project-details {
+    padding: 25px;
+  }
+  
+  .project-title {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+  
+  .github-link {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .github-link:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+  }
+  
+  .project-description {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .student-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .student-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 2px solid var(--primary-color);
+  }
+  
+  .student-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .project-duration {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  .projects-bg-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(247, 88, 53, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: -1;
+    opacity: 0.3;
+  }
+  
+  /* Button enhancement */
+  .btn-lg {
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
